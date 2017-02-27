@@ -10,7 +10,13 @@
                 background: url('bg-3.png');
             }
         </style>
+        <script>
+          const { remote } = require('electron');
+        </script>
     </head>
     <body>
+      <button type="button" onclick="remote.getCurrentWindow().maximize()">maximize</button>
+      <button type="button" onclick="remote.getCurrentWindow().unmaximize()">unmaximize</button>
+      <button type="button" onclick="remote.getCurrentWindow().close()">exit</button>
     </body>
 </html>
