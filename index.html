@@ -2,21 +2,10 @@
 <html>
     <head>
         <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                background: url('bg-3.png');
-            }
         </style>
-        <script>
-          const { remote } = require('electron');
-        </script>
     </head>
-    <body>
-      <button type="button" onclick="remote.getCurrentWindow().maximize()">maximize</button>
-      <button type="button" onclick="remote.getCurrentWindow().unmaximize()">unmaximize</button>
-      <button type="button" onclick="remote.getCurrentWindow().close()">exit</button>
+    <body style="cursor:pointer;">
+      <div style='cursor:pointer;background-color:white'>look at me1</div>
+      <div style='cursor:pointer'>look at me2</div>
     </body>
 </html>
